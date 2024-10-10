@@ -1,0 +1,28 @@
+.te {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* จัดวางให้มีช่องว่างระหว่างช่องค้นหา เวลา และปุ่ม */
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+

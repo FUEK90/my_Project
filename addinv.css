@@ -1,0 +1,180 @@
+
+
+.main-container {
+    display: flex;   
+    justify-content: center;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้กับกรอบ */
+    background-color: #89a0fa;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 10px; /* เพิ่มช่องว่างระหว่างปุ่ม */
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px; /* ความกว้างของปุ่ม */
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.955);
+    color: #333;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-left: 60px;
+}
+
+.btn:hover {
+    background-color: #A7B3E3;
+}
+
+.btn a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn1 {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* ลบเส้นขอบของลิงก์ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้กับกรอบ */
+}
+
+.btn1:hover {
+    background-color: #32cd32 ;
+}
+
+.btn1 a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.la, .la2 {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 14px;
+    background-color: #d7d7d7cb;
+    color: #000000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* จัดวางให้มีช่องว่างระหว่างช่องค้นหา เวลา และปุ่ม */
+    padding: 20px;
+    padding-left: 650px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+ /* ปุ่มยืนยัน */
+ .confirm-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.confirm-btn:hover {
+    background-color: #0056b3;
+}
+
+
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  @media only screen and (min-width: 520px) {
+    .mu{
+        display: none;
+    }
+}
+
+  @media only screen and (max-width: 520px) {
+    .button-container{
+        display: none;
+    }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+    .main-container{
+        padding: 20px;
+        margin: 20px;
+        margin-top: 10px;
+    }
+    .wrapper{
+        padding-left: 50px;
+    }
+    
+}
